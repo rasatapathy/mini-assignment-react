@@ -1,0 +1,259 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+/* Added today*/
+
+.grid-container {
+    display: flex;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 400px;
+    gap: 70px;
+    padding: 10px;
+    /* margin-top: 30px;  */
+    align-content: center;   
+    flex-wrap: wrap;
+}
+    
+
+
+    
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid pink;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 10px 10px 5px pink;
+}
+    
+    
+    
+.headerLogo {
+    width: 25px;
+    object-fit: contain;
+    }
+
+.divImg {
+    width: 600px;
+    height: 400px;
+    object-fit: center;
+    border: 1px solid black;
+    }
+
+.detailImg {
+    /* width: 450px; */
+    object-fit: contain;
+    }
+.textImg {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    
+}
+
+
+
+
+/* CSS for container of 1st Page */
+
+.Container{
+    display: grid;
+    margin: 5%;
+    align-items: center;
+    border: solid black;
+    width: 80%;
+    justify-content: space-around;
+    border-radius: 25px;
+    /* padding-top: 20px; */
+    padding-bottom: 0px;
+
+
+}
+
+
+
+/* CSS For header */
+
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    }
+    
+    .header__logo {
+    width: 100px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    object-fit: contain;
+    }
+    
+    .header_text {
+    color: rgb(238, 133, 151);
+    margin: 0;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    }
+
+    .header_text2 {
+        color: black;
+        font-size: 16px;
+        font-weight: 350;
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+        
+
+    .header_text3 {
+    color: black;
+    font-size: 16px;
+    font-weight: 350;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    border: 0px;
+    fill: rgb(255, 255, 255)
+    }
+    
+    
+    .search_bar {
+    border: 1px solid pink;
+    padding: 5px 40px;
+    display: flex;
+    margin-top: 2px;
+    margin-right: 58px;
+    }
+    .header_left {
+    width: 30%;
+    }
+    .left_top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    .left_bottom {
+    display: flex;
+    margin-left: 20px;
+    }
+    .header_right {
+    width: 70%;
+    }
+    
+    .right_top{
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    font-weight: 600;
+    }
+    .right_bottom{
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    margin-block: 10px;
+    }
+    
+.Footer{
+    text-align: right;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-top: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+    /* object-fit: contain; */
+    
+}
+.FooterText{
+    padding-right: 10px;
+
+}
+
+
+
+
+/* -----------------------Second Page------------------------------ */
+
+.SPGrid{
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+}
+
+.SPBody{
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+
+}
+
+.SPLeft{
+  display: grid;
+  grid-template-rows: 70fr 15fr 15fr;
+
+}
+
+.SPImg_Availability{
+  display:grid;
+  grid-template-columns: 85fr 15fr;
+
+}
+
+.SPLeftPreFooter{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+
+.SPLeftFooter{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+  background-color: black;
+  color: pink;
+}
+
+.SPRight{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+  box-shadow: 10px 10px 5px pink;
+}
